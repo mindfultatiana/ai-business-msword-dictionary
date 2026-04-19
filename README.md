@@ -36,7 +36,7 @@ This dictionary covers four domains of modern professional English:
 2. Open Word → **Word** menu → **Preferences** → **Spelling & Grammar**
 3. Under *Custom Dictionary*, click the **Dictionaries...** button
 4. Click **Add** and select the downloaded `.dic` file
-5. If the file is not selectable change the dropdown to make `all files` selectable and **Add**
+5. If the file is not selectable change the dropdown to make `all files` selectable and click **Add**
 
 ### Other Applications
 
