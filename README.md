@@ -25,14 +25,14 @@ This dictionary covers four domains of modern professional English:
 
 ### Microsoft Word (Windows)
 
-1. Download `custom_dictionary.dic`
+1. Download `AI_biz_dictionary.dic`
 2. Open Word → **File** → **Options** → **Proofing** → **Custom Dictionaries**
 3. Click **Add** and select the downloaded `.dic` file
 4. Click **OK** to save
 
 ### Microsoft Word (Mac)
 
-1. Download `custom_dictionary.dic`
+1. Download `AI_biz_dictionary.dic`
 2. Open Word → **Word** menu → **Preferences** → **Spelling & Grammar**
 3. Under *Custom Dictionary*, click the **Dictionaries...** button
 4. Click **Add** and select the downloaded `.dic` file
@@ -65,7 +65,7 @@ Contributions are welcome. If you use professional vocabulary that Word consiste
 ### How to contribute
 
 1. Fork this repo
-2. Add your terms to `custom_dictionary.dic` — one term per line, alphabetically sorted within its category
+2. Add your terms to `AI_biz_dictionary.dic` — one term per line, alphabetically sorted within its category
 3. Update the `CHANGELOG.md` with what you added and why
 4. Open a pull request with a short description
 
