@@ -76,6 +76,34 @@ Contributions are welcome. If you use professional vocabulary that Word consiste
 - **Stick to legitimate professional vocabulary.** This is not a slang dictionary. Terms should appear in professional writing, job postings, industry publications, or recognized business frameworks.
 - **Avoid trademarked proper nouns** unless they appear generically in professional writing (e.g., `Kubernetes`, `GitOps`).
 
+### ⚠️ Encoding Requirement
+Microsoft Word requires custom dictionary files to be saved in UTF-16 LE (Little Endian) with BOM encoding. Files saved in UTF-8 or plain ASCII will produce the error:
+
+> "Files without Unicode encoding can't be added to the dictionary list. Save the file as a Unicode file to add it to the dictionary list."
+
+If you edit `AI_biz_dictionary.dic` and re-save it, make sure to preserve the encoding. Here's how:
+Notepad (Windows)
+
+1. File → Save As
+2. Set Encoding to Unicode (Windows calls UTF-16 LE "Unicode")
+3. Save
+
+VS Code
+
+1. Open the file
+2. Click the encoding label in the bottom-right status bar (it will say `UTF-16 LE`)
+3. If it changed, select Save with Encoding → UTF-16 LE with BOM
+
+Python (for programmatic edits)
+```python
+with open("custom_dictionary.dic", "w", encoding="utf-16") as f:
+    f.write(content)
+```
+**Notepad++ **
+
+1. Encoding menu → UCS-2 LE BOM (Notepad++'s name for UTF-16 LE with BOM)
+2. Save
+
 ---
 
 ## Roadmap
