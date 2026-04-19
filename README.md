@@ -32,7 +32,7 @@ This dictionary covers four domains of modern professional English:
 
 ### Microsoft Word (Mac)
 
-1. Download `AI_biz_dictionary.dic`
+1. Download `AI_biz_dictionary_mac.dic`
 2. Open Word → **Word** menu → **Preferences** → **Spelling & Grammar**
 3. Under *Custom Dictionary*, click the **Dictionaries...** button
 4. Click **Add** and select the downloaded `.dic` file
@@ -65,7 +65,7 @@ Contributions are welcome. If you use professional vocabulary that Word consiste
 ### How to contribute
 
 1. Fork this repo
-2. Add your terms to `AI_biz_dictionary.dic` — one term per line, alphabetically sorted within its category
+2. Add your terms to `AI_biz_dictionary.dic` and `AI_biz_dictionary_mac.dic` — one term per line, alphabetically sorted within its category
 3. Update the `CHANGELOG.md` with what you added and why
 4. Open a pull request with a short description
 
@@ -77,9 +77,14 @@ Contributions are welcome. If you use professional vocabulary that Word consiste
 - **Avoid trademarked proper nouns** unless they appear generically in professional writing (e.g., `Kubernetes`, `GitOps`).
 
 ### ⚠️ Encoding Requirement
-Microsoft Word requires custom dictionary files to be saved in UTF-16 LE (Little Endian) with BOM encoding. Files saved in UTF-8 or plain ASCII will produce the error:
+Microsoft Word's encoding requirement differs by platform. Use the correct file for your OS:
 
-> "Files without Unicode encoding can't be added to the dictionary list. Save the file as a Unicode file to add it to the dictionary list."
+Windows → `AI_biz_dictionary.dic` (UTF-16 LE with BOM)
+Mac → `AI_biz_dictionary_mac.dic` (UTF-8)
+
+Loading the wrong file on Windows will produce the error:
+
+> "Files without Unicode encoding can't be added to the dictionary list."
 
 If you edit `AI_biz_dictionary.dic` and re-save it, make sure to preserve the encoding. Here's how:
 Notepad (Windows)
